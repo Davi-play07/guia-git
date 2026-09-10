@@ -53,7 +53,7 @@ hr {
   border: none;
   border-top: 1px solid var(--color-border);
   margin-top: 20rem;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 
 .div-section3 {
@@ -95,6 +95,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .section4 h1 {
   font-size: 5rem;
@@ -143,7 +144,12 @@ hr {
 
   align-items: center;
   padding: 3rem;
+
+   transition: transform 0.5s ease;
   
+}
+.div-user:hover {
+  transform: translateY(-10px);
 }
 .div-user h3 {
   font-size: 2rem;
@@ -175,4 +181,92 @@ hr {
 
 .div-social a:hover{
   background-color: #0d111763;
+}
+.section5 {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 15rem;
+}
+.section5-left {
+  width: 50%;
+}
+
+.section5-left p{
+  font-size: 1.5rem;
+  color: var(--color-text-gray);
+  line-height: 1.8;
+}
+.section5-left h1{
+  font-size: 5rem;
+  margin: 0rem;
+}
+.div-qrcode {
+  border-radius: 1rem;
+  background-color: var(--color-backgound-divs);
+  display: flex;
+  flex-direction: column;
+  border: 0.0625rem solid var(--color-border);
+
+  align-items: center;
+  padding:2.7em 10rem;
+
+  
+}
+
+.div-qrcode img{
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.div-qrcode > p{
+  color: var(--color-text-gray);
+  font-size: 1.3rem;
+  margin:0;
+}
+
+.div-chave-pix {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  gap: 1rem;
+
+  border: 0.0625rem solid var(--color-border);
+  background-color: #0d1117;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+
+}
+.div-chave-pix p {
+  white-space: nowrap;
+}
+.div-chave-pix button {
+  background-color: transparent;
+  border: 0.1rem solid var(--color-border);
+  border-radius: 0.5rem;
+  color:white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+.div-chave-pix button:hover {
+  background-color: #767e8b19;
+}
+
+.div-btns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.div-btns button{
+  background-color: transparent;
+  border: 0.1rem solid var(--color-border);
+  border-radius: 0.8rem;
+  color:white;
+  cursor: pointer;
+  padding: 1rem 1.6rem;
+
+}
+.div-btns button:hover {
+  background-color: #767e8b19;
 }
