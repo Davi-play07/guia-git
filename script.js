@@ -1,5 +1,12 @@
 lucide.createIcons();
 
+
+// ---------------------pagina Inicial---------------------
+
+function irParaGithub() {
+  window.open("https://github.com", "_blank");
+}
+
 function codeHTML(lines) {
   return lines
     .map(([cls, text]) =>
