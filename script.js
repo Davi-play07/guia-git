@@ -1,5 +1,12 @@
 lucide.createIcons();
 
+
+// ---------------------pagina Inicial---------------------
+
+function irParaGithub() {
+  window.open("https://github.com", "_blank");
+}
+
 function codeHTML(lines) {
   return lines
     .map(([cls, text]) =>
@@ -99,3 +106,34 @@ buttons.forEach((button) => {
   });
 });
 
+
+
+
+// ---------------------pagina sobre---------------------
+
+function copiarPix() {
+  const chave = document.getElementById("chavePix").textContent;
+
+  navigator.clipboard.writeText(chave);
+}
+
+function darEstrela() {
+  window.open(
+    "https://github.com/euandr/guia-git",
+    "_blank"
+  );
+}
+
+function compartilharProjeto() {
+  console.log(navigator.share);
+
+  if (navigator.share) {
+    navigator.share({
+      title: "GitBase",
+      text: "Confira o GitBase, um projeto para aprender Git e GitHub!",
+      url: window.location.href
+    });
+  } else {
+    alert("Seu navegador não suporta compartilhamento.");
+  }
+}
